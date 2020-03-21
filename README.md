@@ -1,27 +1,31 @@
 # AngularFirebaseExample
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
-## Development server
+Sample Angular Firebase Firestore database project with CRUD functionality. Also, using Material Design components.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Prerequisites 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1- Node.js and NPM. (You can download both together from https://nodejs.org/en/)
 
-## Build
+2- Angular CLI. (Check how to setup from https://angular.io/guide/setup-local)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## How to run this project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1- Clone this project to your machine.
 
-## Running end-to-end tests
+2- Create new Firebase project.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+3- Add your Firebase config to the project.
 
-## Further help
+(Check how to setup in step #3 from https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+4- Run the project locally using `ng serve` command. Then Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+## Deployment
+
+This project is configured to be deployed to Firebase Hosting. But requires to add `firebase.json` and `.firebaserc` files.
+
+(Check how to setup from https://github.com/angular/angularfire/blob/master/docs/deploy/getting-started.md)
