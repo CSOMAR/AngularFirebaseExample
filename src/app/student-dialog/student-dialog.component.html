@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>{{title}}</h2>
+
+<mat-dialog-content [formGroup]="form" style="margin-top: 20px;">
+    <mat-form-field>
+        <mat-label>What is your name?</mat-label>
+        <input matInput placeholder="Ex. Ahmed" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>How old are you?</mat-label>
+        <input matInput placeholder="Ex. 15" formControlName="age">
+    </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button mat-primary" (click)="save(form.value.name, form.value.age)" [disabled]="isDisabled">Save</button>
+</mat-dialog-actions>
